@@ -978,13 +978,13 @@ img {
   width: 260px;
 }
 .service{
-  margin-left: 150px;
+  margin-left: 183px;
 }
 #Skills{
   margin-left: 165px;
 }
 .qwe{
-  margin-left: 80px;
+  margin-left: 90px;
   top: 1030px;
 }
 @media only screen and (max-width: 768px) {
@@ -992,11 +992,11 @@ img {
     display: block;
   }
   .about{
-    width: 582px;
+    width: 606px;
   }
   .contact{
     top: 1030px;
-    width: 580px;
+    width: 606px;
     display: flex
 ;
     justify-content: center;
@@ -1004,7 +1004,7 @@ img {
   .last-text{
     position: relative;
     top: 1035px;
-    width: 580px;
+    width: 606px;
     margin-left: 0px;
   }
  .mproject{
