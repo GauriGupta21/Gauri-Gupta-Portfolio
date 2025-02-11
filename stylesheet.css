@@ -781,9 +781,11 @@ animation: pulseEffect 1.5s infinite
 }
 
 @media only screen and (max-width: 430px) {
-  body {
-    overflow-x: hidden;
-  }
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
 
   .btn-box {
     margin-top: 15px;
@@ -829,18 +831,9 @@ animation: pulseEffect 1.5s infinite
     
     flex-direction: column;
   }
-  .ser{
-    padding-bottom: 0;
-    margin-left: 209%;
-    margin-bottom: -55%;
-  }
   .service-list {
     margin-left: -25px;
 
-  }
-  .service-list div{
-    width: 900px;
-    
   }
   .ski{
     margin-left: 82%;
@@ -889,3 +882,135 @@ animation: pulseEffect 1.5s infinite
   opacity: 1;
   transform: translateY(0);
 }
+@media only screen and (max-width: 768px) {
+  .header{
+    left: -785px;
+    top: -120px;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide navbar off-screen */
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease-in-out;
+  }
+
+  /* ✅ Show Navbar When Active */
+  .navbar.active {
+    left: 0;
+    gap: 10px;
+  }
+}
+
+/* ✅ Hide Hamburger on Desktop, Show on Mobile */
+.menu-toggle {
+  font-size: 35px;
+  cursor: pointer;
+  color: #0ef;
+  z-index: 2000;
+ /* Hidden by default */
+}
+.logo1{
+  right: 0%;
+}
+.qwe{
+  position: relative;
+    top: 430px;
+}
+.home {
+  height: auto; /* Let the section expand */
+  padding: 50px 2%;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 28px; /* Reduce text size */
+}
+
+.home h3 {
+  font-size: 20px;
+}
+
+.home p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo1 img {
+  width: 80%; /* Scale down profile image */
+  height: auto;
+}
+.SkillContainer, .service-list {
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card, .techStack, .proStack { /* Ensure items fit within screen */
+  text-align: center;
+}
+.portfolio-content {
+  grid-template-columns: 1fr; /* Make projects stack */
+}
+
+.layer h5 {
+  font-size: 18px; /* Reduce project title size */
+}
+
+.layer p {
+  font-size: 14px;
+}
+.about-container{
+  display: flex
+;
+    flex-direction: column;
+}
+.service-card{
+  width: 260px;
+}
+.service{
+  margin-left: 150px;
+}
+#Skills{
+  margin-left: 165px;
+}
+.qwe{
+  margin-left: 80px;
+  top: 1030px;
+}
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .about{
+    width: 582px;
+  }
+  .contact{
+    top: 1030px;
+    width: 580px;
+    display: flex
+;
+    justify-content: center;
+}
+  .last-text{
+    position: relative;
+    top: 1035px;
+    width: 580px;
+    margin-left: 0px;
+  }
+ .mproject{
+  display: none;
+}
+  .row{
+    margin-left: 65px;
+  }
+} 
