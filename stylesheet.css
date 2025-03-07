@@ -107,7 +107,7 @@ section {
   display: flex;
   align-items: center;
   padding: 70px 10% 0;
-  flex-direction: column;
+  flex-direction:row;
 }
 
 .homeContent {
@@ -328,6 +328,7 @@ section {
   height: 50vh;
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 .glow-box {
   padding: 15px 30px;
@@ -350,7 +351,9 @@ section {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  padding-left: 10px;
 }
+
 .heading1{
   display: flex;
     justify-content: center;
@@ -383,10 +386,6 @@ section {
   color:white;
   text-align: left;
 }
-.portfolio {
-  width: 100%;
-}
-
 .portfolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, auto));
@@ -493,7 +492,7 @@ section {
 
 .glowing-border {
   position: relative;
-  width: 300px; 
+  width: 500px; 
   height: 300px;
   border-radius: 8px;
   border: 3px solid transparent;
@@ -602,6 +601,7 @@ padding: 50px;
 background: linear-gradient(to right, #0a2e38, black);
 position: relative;
 box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+margin-top: 100px;
 }
 .contact::before {
   content: "";
@@ -921,12 +921,13 @@ animation: pulseEffect 1.5s infinite
 }
 .qwe{
   position: relative;
-    top: 430px;
+    top: 170px;
 }
 .home {
   height: auto; /* Let the section expand */
   padding: 50px 2%;
   text-align: center;
+ 
 }
 
 .home h1 {
@@ -947,8 +948,8 @@ img {
 }
 
 .logo1 img {
-  width: 80%; /* Scale down profile image */
   height: auto;
+  margin-top: 80px;
 }
 .SkillContainer, .service-list {
   flex-direction: column;
@@ -976,16 +977,6 @@ img {
 }
 .service-card{
   width: 260px;
-}
-.service{
-  margin-left: 183px;
-}
-#Skills{
-  margin-left: 165px;
-}
-.qwe{
-  margin-left: 90px;
-  top: 1030px;
 }
 @media only screen and (max-width: 768px) {
   .menu-toggle {
